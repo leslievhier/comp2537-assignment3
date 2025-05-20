@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+
+<body class="dark-theme">
+  <div class="container">
+    <div class="top-controls">
+      <div class="left-controls">
+        <span>Difficulty:</span>
+        <select id="difficulty">
+          <option value="easy" selected>Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        
+        <button id="start-btn">Start</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+      
+      <div class="right-controls">
+        <span>Theme:</span>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark" selected>Dark</option>
+        </select>
+      </div>
+    </div>
+    
+    <div id="game-stats">
+      <div id="clicks">Clicks: 0</div>
+      <div id="pairs-tracker">Pairs: 0/4</div>
+      <div id="timer-container">
+        <span id="timer">Time: 30</span>
+      </div>
+    </div>
+
+    <div id="game_grid"></div>
+    
+    <div id="game-message" class="hidden"></div>
+  </div>
+</body>
+</html>
