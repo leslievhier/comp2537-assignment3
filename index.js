@@ -52,9 +52,7 @@ $(document).ready(function() {
   function updateStats() {
     $("#timer").text(`Time: ${timeRemaining}s`);
     $("#clicks").text(`Clicks: ${clickCount}`);
-    $("#pairs-left").text(`Pairs Left: ${pairsLeft}`);
-    $("#pairs-matched").text(`Pairs Matched: ${pairsMatched}`);
-    $("#total-pairs").text(`Total Pairs: ${totalPairs}`);
+    $("#pairs-tracker").text(`Pairs: ${pairsMatched}/${totalPairs}`);
   }
  
   async function fetchRandomPokemon(count) {
